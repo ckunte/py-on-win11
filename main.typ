@@ -78,9 +78,11 @@ Set the foundation layer up as follows. The steps are to be run in Windows Power
   python -c "import sys; print(sys.executable)"
   ```
 
-== Setup in apps
+= Setup in apps
 
-=== Thonny
+Extending the baseline setup, python can be configured to work in, say, the following apps.
+
+== Thonny
 
 In Thonny~@thonny, all one needs to do is set the location of python executable, like so:
 
@@ -94,7 +96,7 @@ The path should be as below, where `%USERNAME%` is the Windows username as shown
 C:/Users/%USERNAME%/.venvs/global/Scripts/python.exe
 ```
 
-=== Sublime Text
+== Sublime Text
 
 A custom build file may be setup (only once) in Sublime Text~@subl, whose contents may be as follows. 
 
@@ -111,7 +113,7 @@ Ensure value of each key is a single line, e.g., a key is `shell_cmd`, and its c
 
 With this setup under _Tools #sym.arrow.r Build system #sym.arrow.r New Build System..._, copy-paste the block, assuming the paths are as installed, and save this file as, say, `Python-uv.sublime-build`. This creates a menu item under _Tools #sym.arrow.r Build system_. Select _Python-uv_ and hit _Build_.
 
-=== Notepad++
+== Notepad++
 
 In Notepad++~@npp, it is suggested to use NppExec Plug-in to create a build file.
 
