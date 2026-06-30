@@ -22,11 +22,11 @@ jobs:
 
       - name: prep typst
         uses: typst-community/setup-typst@v5
-      - run: typst compile main.typ --font-path=fonts py-on-win11.pdf
+      - run: typst compile main.typ --font-path=fonts python-setup.pdf
 
       - name: release
         uses: softprops/action-gh-release@v3
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: |
-            py-on-win11.pdf
+            python-setup.pdf
